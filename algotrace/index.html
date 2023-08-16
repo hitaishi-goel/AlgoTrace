@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link href="style.css" rel=stylesheet>
+  <link rel="icon" href="images/logo.png" type="image/x-icon">
+  <title>AlgoTrace</title>
+</head>
+
+
+<body>
+  <script src="data.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+
+
+  <header>
+    <nav class="navbar fixed-top navbar-expand-lg px-2 border-bottom navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand fs-2" href="index.html">
+          <img src="images/logo.png" alt="Logo" width="40" height="40"></img>
+          Algo<span class="text-primary">Trace</span></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-5 text-center">
+            <li class="nav-item">
+              <a class="nav-link" href="auth.html">
+                <button type="button" class="btn btn-primary">Login</button>
+              </a>
+            </li>
+            <li mx-5></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><img src="images/pic.jpg" class="rounded-circle" alt="Rounded Image"
+                  width="40" height=="40"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!-- content goes here -->
+  <div class="row m-4"></div>
+  <div class="content p-5 m-2">
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light" id="topic">
+      <a href="topics/array.html" class="text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-table me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2zm15 2h-4v3h4V4zm0 4h-4v3h4V8zm0 4h-4v3h3a1 1 0 0 0 1-1v-2zm-5 3v-3H6v3h4zm-5 0v-3H1v2a1 1 0 0 0 1 1h3zm-4-4h4V8H1v3zm0-4h4V4H1v3zm5-3v3h4cV4H6zm4 4H6v3h4V8z">
+              </path>
+            </svg>
+
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Arrays & Hashing
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-a"></div>
+            </div>
+
+          </div>
+        </div>
+      </a>
+    </div>
+   
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light " data-bs-theme="light">
+      <a href="topics/two_ptr.html" class="text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-code-square me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z">
+              </path>
+              <path
+                d="M6.854 4.646a.5.5 0 0 1 0 .708L4.207 8l2.647 2.646a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 0 1 .708 0zm2.292 0a.5.5 0 0 0 0 .708L11.793 8l-2.647 2.646a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708 0z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black ">
+              Two Pointers
+            </div>
+
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-b"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/sliding_window.html" class="text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-window-dock me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16" style="font-size: 16px;">
+              <path
+                d="M3.5 11a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Zm3.5.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-1a.5.5 0 0 1-.5-.5v-1Zm4.5-.5a.5.5 0 0 0-.5.5v1a.5.5 0 0 0 .5.5h1a.5.5 0 0 0 .5-.5v-1a.5.5 0 0 0-.5-.5h-1Z">
+              </path>
+              <path
+                d="M14 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h12ZM2 14h12a1 1 0 0 0 1-1V5H1v8a1 1 0 0 0 1 1ZM2 2a1 1 0 0 0-1 1v1h14V3a1 1 0 0 0-1-1H2Z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Sliding Window
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-c"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/stack.html" class="text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-stack me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="m14.12 10.163 1.715.858c.22.11.22.424 0 .534L8.267 15.34a.598.598 0 0 1-.534 0L.165 11.555a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.66zM7.733.063a.598.598 0 0 1 .534 0l7.568 3.784a.3.3 0 0 1 0 .535L8.267 8.165a.598.598 0 0 1-.534 0L.165 4.382a.299.299 0 0 1 0-.535L7.733.063z">
+              </path>
+              <path
+                d="m14.12 6.576 1.715.858c.22.11.22.424 0 .534l-7.568 3.784a.598.598 0 0 1-.534 0L.165 7.968a.299.299 0 0 1 0-.534l1.716-.858 5.317 2.659c.505.252 1.1.252 1.604 0l5.317-2.659z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Stack
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-d"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/binary_search.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-file-binary me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M5.526 13.09c.976 0 1.524-.79 1.524-2.205 0-1.412-.548-2.203-1.524-2.203-.978 0-1.526.79-1.526 2.203 0 1.415.548 2.206 1.526 2.206zm-.832-2.205c0-1.05.29-1.612.832-1.612.358 0 .607.247.733.721L4.7 11.137a6.749 6.749 0 0 1-.006-.252zm.832 1.614c-.36 0-.606-.246-.732-.718l1.556-1.145c.003.079.005.164.005.249 0 1.052-.29 1.614-.829 1.614zm5.329.501v-.595H9.73V8.772h-.69l-1.19.786v.688L8.986 9.5h.05v2.906h-1.18V13h3z">
+              </path>
+              <path
+                d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H4zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Binary Search
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-e"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/linked_list.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-link-45deg me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16" style="font-size: 17px;">
+              <path
+                d="M4.715 6.542 3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.002 1.002 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z">
+              </path>
+              <path
+                d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 1 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 1 0-4.243-4.243L6.586 4.672z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Linked List
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-f"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/trees.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark" class="bi bi-tree"
+              viewBox="0 0 16 16">
+              <path
+                d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507z" />
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Trees
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-g"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/tries.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-sign-intersection-side me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="dark" viewBox="0 0 16 16">
+              <path d="M6.25 4v8h1.5V8.75H11v-1.5H7.75V4h-1.5Z"></path>
+              <path
+                d="M9.05.435c-.58-.58-1.52-.58-2.1 0L.436 6.95c-.58.58-.58 1.519 0 2.098l6.516 6.516c.58.58 1.519.58 2.098 0l6.516-6.516c.58-.58.58-1.519 0-2.098L9.05.435Zm-1.4.7a.495.495 0 0 1 .7 0l6.516 6.515a.495.495 0 0 1 0 .7L8.35 14.866a.495.495 0 0 1-.7 0L1.134 8.35a.495.495 0 0 1 0-.7L7.65 1.134Z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Tries
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-h"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/heap.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-chevron-bar-up me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M3.646 11.854a.5.5 0 0 0 .708 0L8 8.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708zM2.4 5.2c0 .22.18.4.4.4h10.4a.4.4 0 0 0 0-.8H2.8a.4.4 0 0 0-.4.4z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Heap/Priority Queue
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-i"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/backtracking.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-backspace me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M5.83 5.146a.5.5 0 0 0 0 .708L7.975 8l-2.147 2.146a.5.5 0 0 0 .707.708l2.147-2.147 2.146 2.147a.5.5 0 0 0 .707-.708L9.39 8l2.146-2.146a.5.5 0 0 0-.707-.708L8.683 7.293 6.536 5.146a.5.5 0 0 0-.707 0z">
+              </path>
+              <path
+                d="M13.683 1a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-7.08a2 2 0 0 1-1.519-.698L.241 8.65a1 1 0 0 1 0-1.302L5.084 1.7A2 2 0 0 1 6.603 1h7.08zm-7.08 1a1 1 0 0 0-.76.35L1 8l4.844 5.65a1 1 0 0 0 .759.35h7.08a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1h-7.08z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Backtracking
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-j"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/graphs.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-grid-3x2-gap-fill me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="dark" viewBox="0 0 16 16">
+              <path
+                d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Graphs
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-k"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/advgraphs.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-grid-3x2-gap-fill me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="dark" viewBox="0 0 16 16">
+              <path
+                d="M1 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V4zM1 9a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9zm5 0a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1V9z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Advanced Graphs
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-l"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/onedp.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-person me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              1D Dynamic Programming
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-m"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/twodp.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-people me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8Zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022ZM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0ZM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816ZM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275ZM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0Zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              2D Dynamic Programming
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-n"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/greeedy.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-graph-up-arrow me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M0 0h1v15h15v1H0V0Zm10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 .5.5v4a.5.5 0 0 1-1 0V4.9l-3.613 4.417a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61L13.445 4H10.5a.5.5 0 0 1-.5-.5Z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Greedy
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-o"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/intervals.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-intersect me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M0 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v2h2a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2v-2H2a2 2 0 0 1-2-2V2zm5 10v2a1 1 0 0 0 1 1h8a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1h-2v5a2 2 0 0 1-2 2H5zm6-8V2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h2V6a2 2 0 0 1 2-2h5z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Intervals
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-p"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/math.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-hexagon-half me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="dark"
+              viewBox="0 0 16 16">
+              <path
+                d="M14 4.577v6.846L8 15V1l6 3.577zM8.5.134a1 1 0 0 0-1 0l-6 3.577a1 1 0 0 0-.5.866v6.846a1 1 0 0 0 .5.866l6 3.577a1 1 0 0 0 1 0l6-3.577a1 1 0 0 0 .5-.866V4.577a1 1 0 0 0-.5-.866L8.5.134z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Math & Geometry
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-q"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+    <div class="container p-2 mb-2 content-fluid border rounded-4 bg-light" data-bs-theme="light">
+      <a href="topics/bit.html" class=" text-decoration-none">
+        <div class="row justify-content-center align-items-center p-2 b-2">
+          <div class="col-sm-1 col-md-1">
+            <svg class="bi bi-file-earmark-binary-fill me-2" xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+              fill="dark" viewBox="0 0 16 16">
+              <path
+                d="M5.526 10.273c-.542 0-.832.563-.832 1.612 0 .088.003.173.006.252l1.559-1.143c-.126-.474-.375-.72-.733-.72zm-.732 2.508c.126.472.372.718.732.718.54 0 .83-.563.83-1.614 0-.085-.003-.17-.006-.25l-1.556 1.146z">
+              </path>
+              <path
+                d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zm-2.45 8.385c0 1.415-.548 2.206-1.524 2.206C4.548 14.09 4 13.3 4 11.885c0-1.412.548-2.203 1.526-2.203.976 0 1.524.79 1.524 2.203zm3.805 1.52V14h-3v-.595h1.181V10.5h-.05l-1.136.747v-.688l1.19-.786h.69v3.633h1.125z">
+              </path>
+            </svg>
+          </div>
+          <div class="col-sm-11 col-md-4">
+            <div class="h2 text-black">
+              Bit Manipulation
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-7">
+            <div class="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0"
+              aria-valuemax="100">
+              <div class="progress-bar progress-bar-primary" style="width: 0%" id="progress-r"></div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+/* #topic {
+  background-color: #feecef;
+}
+ */
+.row {
+  transition: 2s transform cubic-bezier(.155, 1.105, .295, 1.12), .3s box-shadow, .3s -webkit-transform cubic-bezier(.155, 1.105, .295, 1.12);
+  cursor: pointer;
+}
+
+.row:hover {
+  border-radius: 10px;
+  transform: scale(1.01);
+}
+
+/* progress bar*/
+/* My Skills */
+/* Define the keyframes for the animation */
+@keyframes progressBarAnimation {
+  0% {
+    width: 0%;
+  }
+  /* // get the value from the database */
+  100% {
+    width: 100; /* Change this value to the desired percentage */
+  }
+}
+
+/* Apply the animation to the progress bar */
+#progress-a {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-b {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-c {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-d {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-e {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-f {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-g {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-h {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-i {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-j {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-k {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-l {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-m {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-n {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-o {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-p {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-q {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+#progress-r {
+  animation: progressBarAnimation 1s ease-in-out; /* Change the duration (2s) to adjust the animation speed */
+}
+
